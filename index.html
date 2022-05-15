@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Mem Slider</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+
+        <input type="radio" class="input__radio" name="radio" id="slide_1" checked="checked">
+        <input type="radio" class="input__radio" name="radio" id="slide_2">
+        <input type="radio" class="input__radio" name="radio" id="slide_3">
+        <input type="radio" class="input__radio" name="radio" id="slide_4">
+
+        <div class="slider">
+            <div class="slides">
+                <img src="/assets/img/1.jpg"
+                    alt="Разные выражения лица Джони Деппа. Подпись: 'Когда читаешь свои пьяные переписки'."
+                    class="img_1">
+                <img src="/assets/img/2.jpg"
+                    alt="Парень гуляет со своей девушкой, но засматривается на другую. Подпись: 'У всех бывают эти дни... Про крастинация. Про граммирование'."
+                    class="img_2">
+                <img src="/assets/img/3.jpg"
+                    alt="Игрушечная обезьяна фото. Игрушечная обезьяна у которой рот, глаза и нос не на своих местах. Подпись 'Когда сдвинул div на 1 пиксель'."
+                    class="img_3">
+                <img src="/assets/img/4.jpg"
+                    alt="Лягушонок рыбачит, о чём-то думает, смотрит на закат и смотрит на дождь. Подпись: 'Когда придумываешь подходящее имя для переменной'."
+                    class="img_4">
+            </div>
+        </div>
+
+        <div class="slide__description">
+            <div class="text_title">
+                <p class="title_1">Когда читаешь свои пьяные переписки</p>
+                <p class="title_2">У всех бывают эти дни...</p>
+                <p class="title_3">Когда сдвинул &ltdiv&gt на 1 пиксель</p>
+                <p class="title_4">Когда придумываешь подходящее имя для переменной</p>
+            </div>
+
+            <div class="slide__navigation">
+                <label for="slide_1">
+                    <div class="circle"></div>
+                </label>
+                <label for="slide_2">
+                    <div class="circle"></div>
+                </label>
+                <label for="slide_3">
+                    <div class="circle"></div>
+                </label>
+                <label for="slide_4">
+                    <div class="circle"></div>
+                </label>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
