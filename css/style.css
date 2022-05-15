@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(45, 51, 59);
+  font-size: 1.5rem;
+}
+
+.input__radio {
+  display: none;
+}
+
+.wrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.slider {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  max-width: 50rem;
+}
+
+.slides {
+  display: flex;
+  transition: 0.7s ease-in-out;
+}
+
+.slide__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.text_title {
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  margin: 0;
+}
+
+.slide__navigation {
+  display: flex;
+}
+
+label {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label:active > .circle {
+  transform: scale(0.6);
+}
+
+.circle {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(83, 155, 245);
+  border: 0.2rem solid rgb(83, 155, 245);
+  margin: auto;
+  align-self: center;
+}
+
+label:hover .circle {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+#slide_1:checked ~ .slide__description [for="slide_1"] .circle {
+  background-color: transparent;
+}
+#slide_2:checked ~ .slide__description [for="slide_2"] .circle {
+  background-color: transparent;
+}
+#slide_3:checked ~ .slide__description [for="slide_3"] .circle {
+  background-color: transparent;
+}
+#slide_4:checked ~ .slide__description [for="slide_4"] .circle {
+  background-color: transparent;
+}
+
+#slide_1:checked ~ .slider .slides {
+  transform: translateX(0);
+}
+#slide_2:checked ~ .slider .slides {
+  transform: translateX(-100%);
+}
+#slide_3:checked ~ .slider .slides {
+  transform: translateX(-200%);
+}
+#slide_4:checked ~ .slider .slides {
+  transform: translateX(-300%);
+}
+
+#slide_1:checked ~ .slide__description .title_1 {
+  transition: opacity 1s linear;
+  transform: translateY(0);
+  opacity: 1;
+}
+#slide_2:checked ~ .slide__description .title_2 {
+  transition: opacity 1s linear;
+  transform: translateY(-100%);
+  opacity: 1;
+}
+#slide_3:checked ~ .slide__description .title_3 {
+  transition: opacity 1s linear;
+  transform: translateY(-200%);
+  opacity: 1;
+}
+#slide_4:checked ~ .slide__description .title_4 {
+  transition: opacity 1s linear;
+  transform: translateY(-300%);
+  opacity: 1;
+}
