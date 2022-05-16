@@ -143,14 +143,14 @@ label:hover .circle {
     order: -1;
   }
   p {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
   }
   label {
     width: 4vw;
   }
   .circle {
-    width: 2vw;
-    height: 2vw;
+    width: 1.6vw;
+    height: 1.6vw;
     border: 0.5vw solid rgb(83, 155, 245);
   }
 }
