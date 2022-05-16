@@ -25,6 +25,11 @@ body {
   transition: 0.7s ease-in-out;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .slide__description {
   display: flex;
   justify-content: space-between;
@@ -125,27 +130,27 @@ label:hover .circle {
 }
 
 @media screen and (max-width: 768px) {
-    .slide__description {
-        flex-direction: column;
-        margin-top: 4vw;
-    }
-    .text_title {
-        align-self: flex-start;
-        height: 4vw;
-        margin-top: 2vw;
-    }
-    .slide__navigation {
-        order: -1;
-    }
-    p {
-        font-size: 3.5vw; 
-    }
-    label {
-        width: 4vw;
-    }
-    .circle {
-        width: 2vw;
-        height: 2vw;
-        border: 0.5vw solid rgb(83, 155, 245);
-    }
+  .slide__description {
+    flex-direction: column;
+    margin-top: 4vw;
+  }
+  .text_title {
+    align-self: flex-start;
+    height: 4vw;
+    margin-top: 2vw;
+  }
+  .slide__navigation {
+    order: -1;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  label {
+    width: 4vw;
+  }
+  .circle {
+    width: 2vw;
+    height: 2vw;
+    border: 0.5vw solid rgb(83, 155, 245);
+  }
 }
